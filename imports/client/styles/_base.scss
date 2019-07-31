@@ -37,3 +37,20 @@ input[type=text], input[type=email], input[type=password] {
   margin-bottom: $space;
   padding: $input-spacing;
 }
+
+.uniformsField input {
+  border: 1px solid #dddddd;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+}
+
+.uniformsField textarea {
+  border: 1px solid #dddddd;
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  margin: 0px 0px 15px;
+  width: 180px;
+  height: 25px;
+}

@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router';
 
-export default NotFound = ({ location }) => {
+export default NotFound = () => {
     return (
-      <div>
-        <h3>
-          No match for <code>{location.pathname}</code>
-        </h3>
+      <div className="boxed-view">
+        <div className="boxed-view__box">
+          <h1>Page Not Found</h1>
+          <p>We're unable to find that page.</p>
+          <Link to="/" className="button button--link">HEAD HOME</Link>
+        </div>
       </div>
     );
   }

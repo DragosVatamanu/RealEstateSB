@@ -2,27 +2,37 @@ import SimpleSchema from 'simpl-schema';
 
 const ArticlesSchema = new SimpleSchema({
   title: {
-      type: String
+      type: String,
+      max: 150,
+      required: true
   },
 
   description: {
-      type: String
+      type: String,
+      max: 500,
+      required: true
   },
 
-  typeOfApartment: {
-      type: String
+  numberOfRooms: {
+      type: Number,
+      min: 1,
+      required: true
+
   },
 
   address: {
-      type: String
+      type: String,
+      required: true
   },
 
   price: {
-      type: Number
+      type: Number,
+      required: true
   },
 
   phoneNumber: {
-      type: Number
+      type: Number,
+      required: true
   },
 
   createdAt: {

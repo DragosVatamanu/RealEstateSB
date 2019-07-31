@@ -2,7 +2,7 @@ import React from 'react';
 import Modal from 'react-modal';
 import { Meteor } from 'meteor/meteor';
 
-import {AutoForm, TextField, LongTextField, AutoField, SubmitField} from 'uniforms-unstyled';
+import {AutoForm, TextField, LongTextField, NumField} from 'uniforms-unstyled';
 import ArticleSchema from './ArticleSchema';
 
 class ArticleCreate extends React.Component {
@@ -52,10 +52,10 @@ class ArticleCreate extends React.Component {
           {this.state.error ? <p>{this.state.error}</p> : undefined}
           <AutoForm schema={ArticleSchema} onSubmit={this.onSubmit} className="boxed-view__form">
               <TextField name="title" max="150"/>
-              <LongTextField name="description" max="500" />
+              <LongTextField name="description" className="uniformsField" max="500" />
               <TextField name="address"/>
-              <TextField name="typeOfApartment"/>
-              <TextField name="price"/>
+              <NumField step={1} className="uniformsField" name="numberOfRooms"/>
+              <NumField step={10000} className="uniformsField" name="price"/>
               <TextField name="phoneNumber"/>
               <button type="submit" className="button">
                 Add Article
