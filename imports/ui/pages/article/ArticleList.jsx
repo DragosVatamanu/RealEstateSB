@@ -32,9 +32,6 @@ export default class ArticleList extends React.Component {
   render() {
     const deleteButton = <button onClick={this.removeArticle}></button>
 
-    if (isLoading) {
-      return (<div>Loading...</div>);
-    }
     return (
       <div>
         <FlipMove maintainContainerHeight={true}>
