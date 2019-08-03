@@ -11,7 +11,7 @@ export default class ArticlesListItem extends React.Component {
             <div className="item">
                 <h2>{this.props.title}</h2>
                 <p>Description: {this.props.description}</p>
-                <p>Number of rooms: {this.props.numberOfRoomsx} rooms</p>
+                <p>Number of rooms: {this.props.numberOfRooms} rooms</p>
                 <p>Address: {this.props.address}</p>
                 <p>Phone Number: {this.props.phoneNumber}</p>
                 <p>Price: {this.props.price} EUR</p>
