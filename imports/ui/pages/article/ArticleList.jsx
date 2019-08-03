@@ -30,7 +30,6 @@ export default class ArticleList extends React.Component {
     this.articlesTracker.stop();  
   }
   render() {
-    const {isLoading} = this.props;
     const deleteButton = <button onClick={this.removeArticle}></button>
 
     if (isLoading) {
